@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+:root{
+    --gray-pragraph: #4F4F4F;
+    --tomato-icon: #F2994A;
+    --gray-time-title: #BDBDBD;
+    --gray-time-paragraph: #333333;
+    --gray-checkbox: #828282;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    min-width: 350px;
+}
+
+/* Esilos para la primera sección*/
+
+.main-info {
+    padding: 0 10px;
+}
+
+.main-info h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.paragraph {
+    display: flex;
+}
+
+.paragraph .icon-dots {
+    margin: 0 10px 0 0;
+}
+
+.paragraph p {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: var(--gray-pragraph);
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figure .main-img {
+    width: 100%;
+    max-width: 969px;
+    height: auto;
+}
+
+
+/* Estilos para box-time */
+.preparation {
+    padding: 0 10px;
+}
+
+.box-time .yield {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.utensils i {
+    color: var(--tomato-icon);
+    margin: 0 10px 0 0;
+}
+
+.yield-paragraph p:first-child {
+    font-size: 8px;
+    color: var(--tomato-icon);
+}
+
+.yield-paragraph p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+.time {
+    display: flex;
+    margin: 20px 0;
+}
+
+.time span {
+    margin-right: 5px;
+    color: var(--gray-pragraph);
+}
+
+.time .container-time {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 35%;
+}
+
+.container-time h4 {
+    font-size: 8px;
+    color: var(--gray-time-title);
+}
+
+.container-time p {
+    font-size: 10px;
+    color: var(--gray-time);
+}
+
+
+/* Estilos para instruction */
+
+.instruction h2 {
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    color: var(--gray-time-paragraph);
+    margin: 10px 0;
+}
+
+.instruction .graham {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--gray-time-paragraph);
+    margin: 20px 0;
+}
+
+.cheesecake {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--gray-time-paragraph);
+    margin: 50px 0;
+}
+
+ul li {
+    list-style: none;
+    display: flex;
+    margin: 25px 0 25px 10px;
+}
+
+.input {
+    margin: 0 10px 0 0;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin: 0 5px 0 0;
+}
+
+ul label {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--gray-time-paragraph);
+    font-weight: 400;
+}
+
+.title-instruction {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--gray-time-paragraph);
+    margin: 35px 0;
+}
+
+
+/* Estilos para las instrucciones */
+
+.container-instruction {
+    display: flex;
+    margin: 20px 0;
+}
+
+.container-instruction .num {
+    background-color: var(--tomato-icon);
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.container-instruction-paragraph {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--gray-time-paragraph);
+}
+
+footer {
+    margin: 20px auto;
+    color: #989898;
+    text-align: center;
+}
+
+footer a {
+    color: #989898;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Estilos para pantalla mayor a 700px */
+
+@media screen and (min-width: 700px){
+
+    .container {
+        width: 90%;
+        max-width: 969px;
+    }
+
+    .main-info h1 {
+        font-size: 30px;
+    }
+
+    .paragraph {
+        padding-right: 200px;
+    }
+    
+    .preparation {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .box-time {
+        width: 40%;
+    }
+
+    .instruction {
+        width: 60%;
+    }
+}
+
+
+/* Estilos para pantalla mayor a 850px */
+
+@media screen and (min-width: 850px){
+    .main-info h1 {
+        font-size: 40px;
+    }
+
+    .paragraph p {
+        font-size: 13px;
+    }
+
+    ul label {
+        font-size: 16px;
+    }
+}
+
+
+/* Estilos para pantalla mayor a 1000px */
+
+@media screen and (min-width: 1000px){
+    .main-info h1 {
+        font-size: 48px;
+    }
+
+    .paragraph p {
+        font-size: 14px;
+        padding-right: 100px;
+    }
+}
